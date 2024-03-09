@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SASS</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header-image">
+        <img src="img/logo.png" alt="Sass logo" />
+      </div>
+      <div class="header-menu">
+        <ul class="header-list">
+          <li class="header-item">
+            <a href="#defin" class="header-link">Розуміння</a>
+          </li>
+          <li class="header-item">
+            <a href="#usage" class="header-link">Як користуватись</a>
+          </li>
+          <li class="header-item">
+            <a href="#pref" class="header-link">Переваги</a>
+          </li>
+          <li class="header-item">
+            <a href="#contacts" class="header-link">Контакти</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- main -->
+    <main class="page">
+      <!-- hero -->
+      <div class="hero">
+        <h1 class="hero-title">Препроцесор SASS</h1>
+        <p>
+          <mark>SASS</mark> - мова стилів, яку розробив Хемптон Кетлін. Це скорочення для синтаксично дивовижних таблиць стилів. Це мова сценаріїв перед процесором, яку можна інтерпретувати або
+          компілювати на каскадні таблиці стилів. <mark>Це більш стабільна і потужна версія CSS, яка структурно описує стиль будь-якого документа</mark>. SASS - це просто розширення до CSS. Він
+          включає нові функції, такі як змінні, вкладені правила, міксини, вбудований імпорт, вбудовані функції, які допомагають в маніпулюванні кольором та іншими значеннями. Все це повністю сумісне
+          з CSS.
+        </p>
+      </div>
+      <!-- definition -->
+      <div id="defin" class="definition">
+        <div>
+          <h2 class="definition-title">Розуміння SASS</h2>
+          <p>
+            <mark>SASS</mark> вважається потужним, стабільним і швидким. Причиною цього є те, що він має різні функції, такі як змінні, гніздування, міксин та ін.<br />
+            Давайте переглянемо ці по черзі та зрозуміємо SASS краще.
+          </p>
+        </div>
+        <ol class="definition-list">
+          <li class="definiton-item">
+            <h3>Змінні:</h3>
+            <div class="item-text">
+              <p>
+                Змінні дозволяють користувачеві визначати певні значення та використовувати їх знову через код. Ці змінні схожі на JavaScript. Будь-яку змінну можна легко визначити, додавши знак $.
+              </p>
+              <p><span>Приклад</span> : $ змінної-імені: змінна-значення;</p>
+              <p>Користувач може визначити будь-яку кількість змінних за потребою. Після компіляції змінних вони замінюються їх фактичними значеннями в CSS.</p>
+            </div>
+          </li>
+          <li class="definiton-item">
+            <h3>Вкладеність:</h3>
+            <div class="item-text">
+              <p>
+                Вкладення допомагає визначити добірку селекторів у селекторах батьків. CSS не підтримує це, а значить, робить SASS більш оптимізованою мовою кодування. Це допомагає писати більш чистий
+                і менш повторюваний код.
+              </p>
+            </div>
+          </li>
+          <li class="definiton-item">
+            <h3>Міксини:</h3>
+            <div class="item-text">
+              <p>
+                Mixin - ще одна корисна функція, яка може зменшити надмірність та робить можливим повторне використання коду. Це аналогічно функціям, коли один раз визначений код може бути
+                використаний будь-яку кількість разів.
+              </p>
+            </div>
+          </li>
+          <li class="definiton-item">
+            <h3>Партії та імпорт:</h3>
+            <div class="item-text">
+              <p>
+                Партіали - це окремі файли, які можуть містити код, що робить код модульним. За допомогою цієї функції ви можете легко мати окремі файли для різних компонентів. Ім'я частки завжди
+                визначається додаванням підкреслення перед іменем.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <!-- work -->
+      <div id="usage" class="work">
+        <div>
+          <h2 class="work">Як користуватися SASS?</h2>
+          <p>Наведені нижче кроки допоможуть вам використовувати SASS найпростішим можливим способом.</p>
+        </div>
+        <ul class="work-list">
+          <li class="work-item">Створіть демонстраційну папку в будь-якій точці вашої системи.</li>
+          <li class="work-item">Всередині цієї папки створіть дві папки / CSS та / scss.</li>
+          <li class="work-item">Після створення цих двох папок перейдіть до / scss папки та створіть файл, який називається demo.scss. Це розширення є scss, що означає, що це файл SASS.</li>
+          <li class="work-item">Перейдіть до командного рядка та перейдіть до демонстраційної папки.</li>
+          <li class="work-item">Після того, як ви перейдете в цю папку, ви будете спостерігати, як ваші scss-файли збираються в CSS.</li>
+        </ul>
+        <a href="https://sass-lang.com/documentation/" target="_blank" title="https://sass-lang.com/documentation/">Більш детальна інформація та документація</a>
+      </div>
+      <!-- advantages -->
+      <div id="pref" class="advantages">
+        <h2 class="advantages-title">Переваги SASS</h2>
+        <ul class="avantages-list">
+          <li class="advantages-item">SASS дозволяє користувачеві написати чистий код. Це полегшує обробку і менше CSS використовується для побудови програми.</li>
+          <li class="advantages-item">Він містить менше коду, що полегшує швидкість роботи відповідного CSS.</li>
+          <li class="advantages-item">Він більш стійкий, потужний і елегантний. Він використовується дизайнерами та розробниками та допомагає їм працювати ефективніше та швидше.</li>
+          <li class="advantages-item">Він сумісний з CSS, і тому всі бібліотеки CSS можуть бути використані.</li>
+          <li class="advantages-item">
+            Він пропонує такі засоби, як вкладеність, що допомагає писати вкладений синтаксис та використовувати такі функції, як маніпуляція кольором, математичні функції та інші значення.
+          </li>
+        </ul>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div id="contacts" class="footer-contacts">
+        <h4 class="footer-title">Контактна інформація</h4>
+        <div class="email">
+          <a href="mailto:info@sass.com.ua">info@sass.com.ua</a>
+        </div>
+        <div class="phone">
+          <a href="tel:+380937632417">+380937632417</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
