@@ -1,0 +1,55 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+/* * {
+  color: rgb(204, 193, 94);
+} */
+a {
+  color: blue;
+}
+h1 {
+  color: rgb(247, 13, 13);
+}
+.title {
+  color: orange;
+}
+#tour {
+  color: rgb(105, 100, 110);
+}
+[class*="tourism-text"] {
+  color: rgb(172, 28, 28);
+}
+div.population-text {
+  color: rgb(243, 15, 186);
+}
+.main-timezone.timezone {
+  color: rgb(79, 214, 16);
+}
+.climate-text p {
+  color: rgb(51, 162, 170);
+}
+.header-item a {
+  color: rgb(185, 101, 45);
+}
+.cuisine-item .item-title {
+  color: rgb(21, 133, 231);
+}
+.religion .religion-text {
+  color: lightslategray;
+}
+.hero-text * {
+  color: rgb(93, 23, 173);
+}
+.religion > p {
+  color: rgb(134, 100, 27);
+}
+.tourism-item > h3 {
+  color: red;
+}
+.tourism-item-title ~ div {
+  color: rgb(44, 240, 18);
+}
+.item-title + p {
+  color: rgb(172, 22, 22);
+}
