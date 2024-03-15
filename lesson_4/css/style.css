@@ -1,0 +1,232 @@
+/* =============== fonts ===============*/
+/* Підключення через google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,600&display=swap");
+/* Локальне підключення шрифтів */
+@import url(fonts.css);
+/* Скидання стилів */
+@import url("reset.css");
+
+/* =============== common styles ===============*/
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.75;
+  color: rgb(38, 43, 59);
+}
+/* =============== blocks ===============*/
+.title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.3;
+  text-shadow: 2px 2px 5px rgb(100, 236, 100);
+}
+/*! ============== Karpaty ============== */
+/*? Ще раз підключити шрифти з гугл фонтс */
+/* header */
+.header {
+}
+.header-image {
+  text-align: center;
+}
+.header-list {
+  font-size: 20px;
+  line-height: 1.4;
+  color: blue;
+}
+.header-item {
+}
+.header-link {
+  text-decoration: underline;
+}
+.krovato-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(231, 130, 15);
+  letter-spacing: 1.3px;
+}
+
+/* main start */
+.page {
+}
+
+/* hero */
+.page-hero {
+}
+.hero {
+}
+.hero-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.5;
+  text-shadow: 0 0 3px rgb(51, 62, 160);
+  letter-spacing: 2px;
+}
+
+.hero-content {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+}
+
+.hero-image {
+}
+
+/* history */
+.page-history {
+}
+.history {
+}
+
+.history-title {
+}
+
+.history-body {
+}
+.history-main-block {
+}
+.history-main-block span {
+  color: rgb(7, 133, 14);
+}
+
+.history-image {
+}
+
+.history-block {
+}
+.history-block > h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Peaks */
+.page-peaks {
+}
+.peaks {
+}
+.peaks-title {
+}
+.title {
+}
+.peaks-content {
+}
+.peaks-link {
+  text-decoration: underline;
+  color: rgb(120, 190, 15);
+}
+.peaks-image {
+}
+
+/* Tourism */
+.page-tourism {
+}
+.tourism {
+}
+.tourism-title {
+}
+
+.tourism-body {
+}
+.tourism-seasons {
+}
+.seasons {
+}
+.winter {
+}
+.seasons.winter {
+}
+.seasons-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+.seasons-advantages {
+  color: rgb(6, 211, 6);
+}
+.seasons-advantages > h4,
+.seasons-flaws > h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+.seasons-flaws {
+  color: rgba(212, 21, 14, 0.87);
+}
+
+.season-necessary {
+}
+.attention {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-style: oblique;
+  letter-spacing: 1.5px;
+}
+.spring-summer {
+}
+.autumn {
+}
+.tourism-attention {
+}
+
+/*! ============ Krovato layout ============ */
+.krovato {
+  font-family: "Proxima Nova";
+  line-height: 1.875; /* 30/16 */
+  color: #2b2929;
+}
+/* ============ krovato blocks ============ */
+.krovato-title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2; /* 48/40 */
+}
+/* choise */
+.choise {
+}
+.choice-title {
+  text-align: center;
+}
+.choice__text {
+}
+.choice-right {
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.26315789; /* 24/19 */
+}
+/* furniture */
+.krovato-furniture {
+}
+.furniture {
+}
+.furniture-title {
+}
+.furniture-image {
+}
+.furniture-content {
+}
+.furniture-text {
+}
+
+.furniture-diversity {
+}
+.diversity {
+}
+.diversity-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4; /* 28/20 */
+}
+.diversity-list {
+}
+.diversity-text {
+}
+/* FOOTER */
+.footer {
+  font-family: "Proxima Nova";
+  line-height: 1.875; /* 30/16 */
+  color: #2b2929;
+  font-weight: 600;
+  text-align: center;
+}
