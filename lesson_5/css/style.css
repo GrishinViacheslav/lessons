@@ -1,0 +1,434 @@
+/* =============== fonts ===============*/
+/* Підключення через Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Roboto:500,500italic,700&display=swap");
+/* Локальне підключення шрифтів */
+@import url(fonts.css);
+/* Скидання стилів */
+@import url("reset.css");
+
+/* =============== common styles ===============*/
+body {
+  font-family: "Proxima Nova";
+  line-height: 1.875; /* 30/16 */
+  color: #2b2929;
+}
+/* =============== blocks ===============*/
+.title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.4;
+  text-shadow: 0px 0px 5px rgb(54, 209, 54);
+  margin-bottom: 20px;
+}
+.krovato-title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2; /* 48/40 */
+}
+/* header */
+.header {
+  padding: 15px 0;
+  background-color: #b1abab7e;
+}
+.header-body {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+.header-list {
+}
+.header-list li {
+  margin-bottom: 10px;
+}
+.header-item {
+}
+.header-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: blue;
+  text-decoration: underline;
+}
+.krovato-link {
+  color: rgb(10, 109, 15);
+}
+.shop-link {
+  color: rgb(231, 130, 15);
+}
+
+/* main start */
+.page {
+}
+/*! ============== Karpaty ============== */
+.page-karpaty {
+}
+.karpaty {
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgb(38, 43, 59);
+}
+.wrap {
+  max-width: 1400px;
+  padding: 0 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* hero */
+.page-hero {
+}
+.hero {
+  font-family: "Roboto", sans-serif;
+  padding-top: 30px;
+}
+.hero {
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.5;
+  text-shadow: 0 0 3px rgb(51, 62, 160);
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.hero-content {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  margin-bottom: 20px;
+}
+
+.hero-image img {
+  max-width: 100%;
+}
+
+/* history */
+.page-history {
+  margin-bottom: 50px;
+}
+.history {
+  background-color: aliceblue;
+  padding: 40px 0 20px;
+}
+
+.history-title {
+}
+
+.history-body {
+}
+.history-main-block > * {
+  margin-bottom: 15px;
+}
+.history-main-block span {
+  color: rgb(153, 88, 13);
+  font-size: 22px;
+}
+
+.history-image {
+  text-align: center;
+  max-height: 500px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.history-image img {
+  max-width: 100%;
+}
+
+.history-block {
+  margin-bottom: 10px;
+}
+.history-block > h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+/* legends */
+.page-legends {
+  margin-bottom: 50px;
+}
+.legends {
+}
+.legends-title {
+}
+.legends-content {
+}
+.legends-content p {
+  margin-bottom: 15px;
+}
+
+/* Peaks */
+.page-peaks {
+  margin-bottom: 50px;
+}
+.peaks {
+}
+.peaks-title {
+}
+.title {
+}
+.peaks-content {
+  margin-bottom: 20px;
+}
+.peaks-content > p {
+  margin-bottom: 15px;
+}
+.peaks-link {
+  text-decoration: underline;
+  color: rgb(120, 190, 15);
+}
+
+.peaks-block {
+  text-align: center;
+}
+.peaks-image {
+  max-width: 100%;
+}
+.peaks-image-big {
+}
+.peaks-image-small {
+  margin-top: -200px;
+}
+/* Tourism */
+.page-tourism {
+  margin-bottom: 50px;
+}
+.tourism {
+  padding: 30px 0;
+}
+.tourism-title ~ p {
+  margin-bottom: 15px;
+}
+
+.tourism-body {
+}
+.tourism-seasons {
+  margin-bottom: 15px;
+}
+.seasons {
+}
+.winter {
+}
+.seasons.winter {
+}
+.seasons-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.seasons-block {
+  font-size: 0;
+  margin: 0 -10px 15px;
+}
+.seasons-advantages {
+  color: rgb(6, 211, 6);
+}
+.seasons-advantages,
+.seasons-flaws {
+  display: inline-block;
+  width: 50%;
+  padding: 0 10px;
+  font-size: 18px;
+  vertical-align: top;
+}
+.seasons-advantages > h4,
+.seasons-flaws > h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+.seasons-flaws {
+  color: rgba(212, 21, 14, 0.87);
+}
+.seasons-advantages > ul,
+.seasons-flaws > ul {
+  padding-left: 15px;
+}
+.witner p.attention {
+  margin-bottom: 10px;
+}
+.attention {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: 1.5px;
+}
+.necessary > p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.necessary-list {
+  padding: 10px;
+  height: 150px;
+  overflow: auto;
+  background-color: antiquewhite;
+  margin-bottom: 20px;
+}
+.necessary-list li {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.spring-summer {
+}
+.autumn {
+}
+.tourism-attention {
+}
+
+/*! ============ Krovato layout ============ */
+.page-krovato {
+}
+.krovato {
+}
+
+/* About */
+.krovato-about {
+}
+.about {
+  background-color: #f8f8f8;
+  padding: 70px 0;
+}
+.about-body {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.about-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.about-items {
+  margin: 0 -15px;
+  font-size: 0;
+}
+.about-item {
+  padding: 0 15px;
+  display: inline-block;
+  font-size: 16px;
+  width: 25%;
+  vertical-align: top;
+  text-align: center;
+}
+.item-about > * {
+  margin-bottom: 20px;
+}
+
+.item-about-image {
+}
+.item-about-title {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.3078; /* 34/26 */
+}
+.item-desc {
+}
+
+/* Furniture */
+.krovato-furniture {
+}
+.furniture {
+  padding: 75px 0 40px;
+  background-color: #f8f8f8;
+}
+
+.furniture-body {
+  max-width: 1100px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.furniture-body > * {
+  margin-bottom: 40px;
+}
+
+.furniture-title {
+}
+.furniture-image {
+  display: block;
+  max-width: 100%;
+}
+.furniture-desc p {
+  margin-bottom: 10px;
+}
+
+.furniture-choice {
+}
+.choice {
+}
+
+.choice-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4; /* 28/20 */
+  margin-bottom: 30px;
+}
+.choice-list {
+  margin-bottom: 40px;
+}
+.choice-list li {
+  margin-bottom: 20px;
+  padding-left: 45px;
+}
+.choice-text {
+}
+/*! ============ Coral layout(EcommerceMinimal) ============ */
+.page-coral {
+}
+.coral {
+}
+/* Products */
+.coral-products {
+}
+.products {
+  padding: 100px 0;
+  background-color: #f3f4f4;
+}
+.products-body {
+  max-width: 1350px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.products-title {
+  font-family: "Roboto";
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.18; /* 59/50 */
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.products-items {
+  margin: 0 -12px;
+  font-size: 0;
+  margin-bottom: 70px;
+}
+.products-item {
+  width: 16.666667%; /* 1/6 */
+  padding: 0 12px;
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: top;
+}
+.products-item img {
+  max-width: 100%;
+}
+/*! FOOTER */
+.footer {
+  font-weight: 600;
+  text-align: center;
+}
