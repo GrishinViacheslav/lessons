@@ -1,0 +1,542 @@
+/* =============== fonts ===============*/
+/* Підключення через Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,500italic,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:500,700&display=swap");
+/* Локальне підключення шрифтів */
+@import url(fonts.css);
+/* Скидання стилів */
+@import url("reset.css");
+
+/* =============== common styles ===============*/
+body {
+  font-family: "Proxima Nova";
+  line-height: 1.875; /* 30/16 */
+  color: #2b2929;
+}
+/* =============== blocks ===============*/
+.title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.4;
+  text-shadow: 0px 0px 5px rgb(54, 209, 54);
+  margin-bottom: 20px;
+}
+.krovato-title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2; /* 48/40 */
+}
+/* header */
+.header {
+  padding: 15px 0;
+  background-image: url(../img/karpaty/background.jpeg);
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* text-align: center; */
+}
+.header-body {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.header-list {
+}
+.header-list li {
+  margin-bottom: 10px;
+}
+.header-item {
+}
+.header-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* main start */
+.page {
+}
+/*! ============== Karpaty ============== */
+.page-karpaty {
+}
+.karpaty {
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgb(38, 43, 59);
+}
+.wrap {
+  max-width: 1400px;
+  padding: 0 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* hero */
+.page-hero {
+}
+.hero {
+  font-family: "Roboto", sans-serif;
+  padding-top: 30px;
+}
+.hero {
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.5;
+  text-shadow: 0 0 3px rgb(51, 62, 160);
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero-content {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.hero-content > p {
+  display: inline;
+  outline: 7px solid red;
+  opacity: 0.8;
+}
+
+.hero-image img {
+  max-width: 100%;
+}
+
+/* history */
+.page-history {
+  margin-bottom: 50px;
+}
+.history {
+  padding: 40px 0 20px;
+}
+
+.history-title {
+}
+
+.history-body {
+}
+.history-main-block > * {
+  margin-bottom: 15px;
+}
+.history-main-block span {
+  color: rgb(153, 88, 13);
+  font-size: 22px;
+}
+
+.history-image {
+  text-align: center;
+  /* max-height: 500px; */
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 0% 100% 0% 100% / 65% 27% 73% 35%;
+}
+.history-image img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.history-block {
+  margin-bottom: 10px;
+}
+.history-block > h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+/* legends */
+.page-legends {
+}
+.legends {
+  margin-bottom: 50px;
+}
+.legends-title {
+}
+.legends-content {
+}
+.legends-content p {
+  margin-bottom: 15px;
+}
+
+/* Peaks */
+.page-peaks {
+  margin-bottom: 50px;
+}
+.peaks {
+}
+.peaks-title {
+}
+.title {
+}
+.peaks-content {
+  margin-bottom: 20px;
+}
+.peaks-content > p {
+  margin-bottom: 15px;
+}
+.peaks-link {
+  text-decoration: underline;
+  color: rgb(120, 190, 15);
+}
+
+.peaks-block {
+  text-align: center;
+}
+.peaks-image {
+  max-width: 100%;
+}
+.peaks-image-big {
+}
+.peaks-image-small {
+  margin-top: -200px;
+  border: 10px solid rgb(36, 87, 36);
+  border-radius: 50px;
+  box-shadow: 0px 0px 15px rgb(236, 201, 1);
+}
+/* Tourism */
+.page-tourism {
+}
+.tourism {
+  padding: 30px 0;
+}
+.tourism-title ~ p {
+  margin-bottom: 15px;
+}
+
+.tourism-body {
+  margin-bottom: 25px;
+}
+.tourism-seasons {
+  margin-bottom: 15px;
+}
+.seasons {
+}
+.winter {
+}
+.seasons.winter {
+}
+.seasons-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.seasons-block {
+  font-size: 0;
+  margin: 0 -10px 15px;
+}
+.seasons-advantages {
+  color: rgb(6, 211, 6);
+}
+.seasons-advantages,
+.seasons-flaws {
+  display: inline-block;
+  width: 50%;
+  padding: 0 10px;
+  font-size: 18px;
+  vertical-align: top;
+}
+.seasons-advantages > h4,
+.seasons-flaws > h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+.seasons-flaws {
+  color: rgba(212, 21, 14, 0.87);
+}
+.seasons-advantages li,
+.seasons-flaws li {
+  padding-left: 35px;
+  min-height: 24px;
+}
+.seasons-advantages li {
+  background: url(../img/karpaty/icon_ок.svg) 0 0 /24px no-repeat;
+}
+.seasons-flaws li {
+  background: url(../img/karpaty/icon_cancel.svg) 0 0 /24px no-repeat;
+}
+
+.winter p.attention {
+  margin-bottom: 10px;
+}
+.attention {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: 1.5px;
+}
+.necessary > p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.necessary-list {
+  padding: 10px;
+  height: 150px;
+  overflow: auto;
+  background-color: antiquewhite;
+  margin-bottom: 20px;
+  border: 2px solid #000;
+  box-shadow: 0px 0.4px 30.7px -11px rgba(0, 0, 0, 0.41),
+    0px 1.1px 54.8px -11px rgba(0, 0, 0, 0.137), 0px 5px 135px -11px rgba(0, 0, 0, 0.046);
+}
+.necessary-list li {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.spring-summer {
+}
+.autumn {
+}
+.tourism-attention {
+}
+
+.tourism-link {
+  text-align: center;
+}
+.tourism-link a {
+  padding: 10px 35px;
+  border-radius: 15px;
+  background-color: rgb(6, 211, 6);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  visibility: hidden;
+}
+
+/*! ============ Krovato layout ============ */
+.page-krovato {
+}
+.krovato {
+}
+
+/* About */
+.krovato-about {
+}
+.about {
+  background-color: #f8f8f8;
+  padding: 70px 0;
+}
+.about-body {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.about-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.about-items {
+  margin: 0 -15px;
+  font-size: 0;
+}
+.about-item {
+  padding: 0 15px;
+  display: inline-block;
+  font-size: 16px;
+  width: 25%;
+  vertical-align: top;
+  text-align: center;
+}
+.item-about > * {
+  margin-bottom: 20px;
+}
+
+.item-about-image {
+}
+.item-about-title {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.3078; /* 34/26 */
+}
+.item-desc {
+}
+
+/* Furniture */
+.krovato-furniture {
+}
+.furniture {
+  padding: 75px 0 40px;
+  background-color: #f8f8f8;
+}
+
+.furniture-body {
+  max-width: 1100px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.furniture-body > * {
+  margin-bottom: 40px;
+}
+
+.furniture-title {
+}
+.furniture-image {
+  display: block;
+  max-width: 100%;
+}
+.furniture-desc p {
+  margin-bottom: 10px;
+}
+
+.furniture-choice {
+}
+.choice {
+}
+
+.choice-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4; /* 28/20 */
+  margin-bottom: 30px;
+}
+.choice-list {
+  margin-bottom: 40px;
+}
+.choice-list li {
+  margin-bottom: 20px;
+  padding-left: 47px;
+  background: url(../img/krovato/mark_ok.svg) 0 0 / 32px no-repeat;
+  min-height: 32px;
+}
+.choice-text {
+}
+/*! ============ EduPlay layout ============ */
+.page-education {
+}
+.education {
+  background: #914cff url(../img/education/holographic.png) center / cover no-repeat;
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+}
+.education-container {
+  background: url(../img/education/alphabet.png) 274px -25px no-repeat,
+    url(../img/education/kid_on_books.png) 100% 50% no-repeat;
+  max-width: 1310px;
+  padding-inline: 15px;
+  margin: 0 auto;
+}
+.education-content {
+  max-width: 600px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: 500;
+  padding-block: 121px;
+}
+.education-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2; /* 48/40 */
+  margin-bottom: 24px;
+}
+.education-text {
+  line-height: 1.6;
+  margin-bottom: 24px; /* 32/20 */
+}
+.education-button {
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-weight: 700;
+  line-height: 1.5625; /* 25/16 */
+}
+.education-button span {
+  display: inline-block;
+  background: url(../img/education/button-icon.png) 0 50% no-repeat;
+  padding-left: 21px;
+  color: #0d1216;
+}
+/*! ============ Coral layout(EcommerceMinimal) ============ */
+.page-coral {
+}
+.coral {
+  padding: 245px 0 60px;
+  background: url(../img/coral/bg_image_sm.svg) left bottom 109px no-repeat,
+    url(../img/coral/bg_image_big.svg) right bottom 157px no-repeat, #f4f4f5;
+  overflow: hidden;
+}
+.coral-container {
+  max-width: 1350px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.coral-items {
+  margin: 0 calc(-116px / 2);
+  font-size: 0;
+}
+.coral-item {
+  display: inline-block;
+  padding: 0 calc(116px / 2);
+  font-size: 30px;
+}
+
+.coral-content {
+  padding: 38px 0 30px;
+  max-width: 682px;
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Roboto";
+  text-transform: capitalize;
+}
+.coral-title {
+  font-size: 74px;
+  font-weight: 300;
+  margin-bottom: 36px;
+}
+.coral-text {
+  line-height: 2;
+  margin-bottom: 66px;
+}
+.coral-button {
+  padding: 19px 26px;
+  font-size: 29px;
+  line-height: 1.17241379;
+  background: #000;
+  color: #fff;
+  min-height: 30px;
+}
+.coral-button span {
+  display: inline-block;
+  padding-left: 38px;
+  background: url(../img/coral/icon.svg) 0 0 / 30px no-repeat;
+}
+
+.coral-image {
+  max-width: 424px;
+  border-radius: 160px 0;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
+}
+.coral-image img {
+  max-width: 100%;
+  margin: -20px 18px 20px -18px;
+  border-radius: 160px 0;
+}
+
+/*! FOOTER */
+.footer {
+  font-weight: 600;
+  text-align: center;
+}
