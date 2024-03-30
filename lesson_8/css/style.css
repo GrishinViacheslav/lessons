@@ -1,0 +1,128 @@
+/* =============== fonts ===============*/
+/* Підключення через Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,500italic,700&display=swap");
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* ============================== */
+[class*="-container"] {
+  max-width: 1100px;
+  padding-inline: 15px;
+  margin: 0 auto;
+}
+/* =============== COMMON STYLES ===============*/
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  color: #2b2929;
+}
+/* =============== GRAPHIC ===============*/
+.page-graphic {
+}
+.graphic {
+  padding-block: 70px;
+  background: #f0f0f0;
+}
+.graphic-container {
+}
+.graphic-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+}
+.graphic-title:not(:last-child) {
+  margin-bottom: 40px;
+}
+.graphic-body {
+  padding: 40px;
+  border: 5px solid #fff;
+  border-radius: 50px;
+  box-shadow: 0 0 5px 5px rgb(136, 136, 136);
+}
+.graphic-body > *:not(:last-child) {
+  margin-bottom: 40px;
+}
+.graphic-list > li:not(:last-child) {
+  margin-bottom: 35px;
+}
+.graphic-list li > img {
+  max-width: 40%;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.graphic-list span {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 500;
+  vertical-align: middle;
+  min-height: 48px;
+}
+.graphic-list li:nth-child(9) span {
+  background: url("../img/icons/question-icon.svg") 0 0 / 48px no-repeat;
+  display: inline-block;
+  padding-left: 60px;
+}
+.graphic-list li:nth-child(10) span::before {
+  content: "";
+  width: 32px;
+  height: 64px;
+  background: url("../img/icons/arrow-icon.svg") 0 0 / 100% 100% no-repeat;
+  vertical-align: middle;
+  margin-right: 30px;
+}
+
+.block {
+  padding: 10px;
+}
+.block-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.block-title:not(:last-child) {
+  margin-bottom: 25px;
+}
+.block img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+/* ========== FOOTER ========== */
+.footer {
+  width: 100%;
+  background-color: #d6d6d6;
+  padding-block: 20px;
+}
+.footer-container {
+  text-align: center;
+}
+.footer-link {
+  padding: 20px 25px;
+  border-radius: 30px;
+  font-size: 20px;
+  background-color: rgb(63, 63, 102);
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 2px 2px 5px rgb(41, 41, 59);
+}
+.footer-link:not(:last-child) {
+  margin-bottom: 25px;
+}
+.footer-link:hover {
+  background-color: rgb(38, 38, 143);
+}
+.footer-copy:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgb(63, 63, 102);
+  margin-bottom: 15px;
+}
+.footer-copy {
+  font-weight: 600;
+}
