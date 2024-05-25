@@ -46,7 +46,7 @@ body {
   position: relative;
   z-index: 2;
 }
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   .top-header {
     display: none;
   }
