@@ -43,6 +43,13 @@ body {
 }
 .top-header {
   background-color: #f8f8f8;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 800px) {
+  .top-header {
+    display: none;
+  }
 }
 .top-header__container {
   padding-block: 15px;
@@ -365,6 +372,7 @@ body {
   opacity: 0;
   transition: all 0.4s;
   box-shadow: 0 0 5px #8b8b8b;
+  pointer-events: none;
 }
 .main-contacts__item {
 }
@@ -380,6 +388,7 @@ body {
   .main-contacts:hover .main-contacts__list {
     top: 100%;
     opacity: 1;
+    pointer-events: all;
   }
   .main-contacts__label:hover::after {
     transform: rotate(180deg);
