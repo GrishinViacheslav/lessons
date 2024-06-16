@@ -1,0 +1,65 @@
+.page {
+  // .page__homework
+  &__homework {
+    margin-top: 180px;
+  }
+}
+.homework {
+  // .homework__container
+  &__container {
+    overflow: hidden;
+  }
+  // .homework__block
+  &__block {
+    & > *:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+  // .homework__text
+  &__text {
+  }
+}
+.list {
+  display: flex;
+  gap: 35px;
+}
+
+.item,
+.new-item {
+  font-size: 30px;
+  line-height: 1.4;
+  font-weight: 600;
+  padding: 5px 15px;
+  background-color: #29750d;
+  border-radius: 5px;
+}
+
+.homework {
+  // .homework__item
+  &__item {
+    span {
+    }
+  }
+}
+
+.homework {
+  // .homework__item
+  &__item {
+  }
+}
+.item-homework {
+  // .item-homework
+  background-color: blue;
+  text-align: center;
+  &__content {
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 600;
+    background-color: #29750d;
+    transform: translateX(-500%);
+    transition: transform 1s;
+    .show & {
+      transform: translateX(0);
+    }
+  }
+}
