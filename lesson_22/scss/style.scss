@@ -1,0 +1,37 @@
+@use "sass:math";
+
+/* Локальне підключення шрифтів */
+@import "_fonts.scss";
+
+/* Скидання стилів */
+@import "_reset.scss";
+
+/* Підключення міксінів */
+@import "_mixins.scss";
+
+
+
+/* =========== COMMON STYLES ===========*/
+body {
+  font-family: "Proxima Nova", sans-serif;
+  background-color: #f8f8f8;
+  font-size: 19px;
+  line-height: 1.26316; /* 24/19 */
+  color: #2b2929;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1320px;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
