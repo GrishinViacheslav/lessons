@@ -1,0 +1,96 @@
+@use "sass:math";
+
+/* Підключення шрифтів Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,700&display=swap");
+
+/* Скидання стилів */
+@import "_reset.scss";
+
+/* Mixins*/
+@import "_mixins.scss";
+
+// Налаштування адаптивної сітки ===============================================================================================================================================================================================================================================================================================
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1512;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1275;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// ==========================================================
+
+/* =========== COMMON STYLES ===========*/
+body {
+  font-family: "Exo", sans-serif;
+  font-size: 20px;
+  line-height: 1.75; /* 175% */
+  letter-spacing: -0.4px;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #000001;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1320px;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+/*=========== layouts ============*/
+%decor {
+  content: "";
+  @include adaptiveValue("width", 480, 120, 0, 1320, 320);
+  @include adaptiveValue("height", 480, 120, 0, 1320, 320);
+  border-radius: 50%;
+  background: linear-gradient(
+    90deg,
+    rgba(151, 0, 255, 0.6) 0%,
+    rgba(87, 255, 28, 0.6) 36.9%,
+    rgba(255, 0, 0, 0.6) 67.4%,
+    rgba(0, 56, 255, 0.6) 100%
+  );
+  opacity: 0.3;
+  filter: blur(25px);
+}
+
+%title {
+  color: #fff;
+  font-family: "Exo", sans-serif;
+  @include adaptiveValue("font-size", 60, 24, 0, 1320, 320);
+  @include adaptiveValue("line-height", 70, 30, 0, 1320, 320);
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  @include adaptiveValue("padding-bottom", 20, 4, 0, 1320, 320);
+  &::after {
+    content: "";
+    width: 133%;
+    height: 1px;
+    background: linear-gradient(90deg, #f00 0%, #42ff00 48.9%, #2400ff 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+// sections
+@import "_header.scss";
+@import "_about.scss";
+@import "_edits.scss";
