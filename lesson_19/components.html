@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Кодування тексту -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Підключення окремого файлу стилів -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Заголовок сторінки в браузері -->
+		<title>Shop</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<main class="page">
+				<!-- !Button link -->
+				<div class="test">
+					<a href="#" class="test__button button-link button-link--white">
+						<svg class="icon">
+							<use xlink:href="img/sprite.svg#cart"></use>
+						</svg>
+						<span>shop now</span>
+					</a>
+				</div>
+
+				<!-- !NEW Card -->
+				<div class="product">
+					<article class="card">
+						<div class="card__block">
+							<a href="#" class="card__image">
+								<picture>
+									<source srcset="img/subscribe/subscribe01-x3.webp 3x">
+									<img src="img/subscribe/subscribe01.webp" alt="Product">
+								</picture>
+							</a>
+							<div class="card__proposal proposal-card">
+								<div
+									class="proposal-card__item item-proposal item-proposal--sale">
+									sale
+								</div>
+								<div
+									class="proposal-card__item item-proposal item-proposal--hot">
+									hot
+								</div>
+							</div>
+							<div class="card__actions actions-card">
+								<div class="actions-card__block">
+									<button type="button" class="actions-card__button">
+										<svg class="icon">
+											<use xlink:href="img/sprite.svg#favorite"></use>
+										</svg>
+									</button>
+									<a href="#" class="actions-card__button">
+										<svg class="icon">
+											<use xlink:href="img/sprite.svg#search"></use>
+										</svg>
+									</a>
+								</div>
+								<a href="#" class="actions-card__button">
+									<svg class="icon">
+										<use xlink:href="img/sprite.svg#cart"></use>
+									</svg>
+									<span>shop now</span>
+								</a>
+							</div>
+						</div>
+						<h3 class="card__title">
+							<a href="#">Adicolor Classics Joggers</a>
+						</h3>
+						<div class="card__info info-card">
+							<a href="#" class="info-card__category">
+								Dress
+							</a>
+							<div class="info-card__prices prices">
+								<div
+									class="prices__item prices__item--old">
+									$124.99
+								</div>
+								<div
+									class="prices__item prices__item--current">
+									$63.85
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<!-- !form-block -->
+				<form action="#" class="form-block">
+					<input type="email" name="form[]" required
+						placeholder="Email address..."
+						class="form-block__input input-form">
+					<button type="submit"
+						class="form-block__button button-form">
+						<svg class="icon">
+							<use xlink:href="img/sprite.svg#send"></use>
+						</svg>
+						<span>Submit</span>
+					</button>
+				</form>
+			</main>
+			<footer class="footer">
+			</footer>
+		</div>
+		<script src="js/script.js"></script>
+		<script src="js/dynamic_adapt.js"></script>
+	</body>
+</html>

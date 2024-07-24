@@ -1,0 +1,99 @@
+.page {
+  // .page__explore
+  &__explore {
+    @include adaptiveValue("margin-bottom", 140, 40);
+  }
+}
+.explore {
+  // .explore__container
+  &__container {
+    position: relative;
+  }
+  // .explore__title
+  &__title {
+    height: 100%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: toRem(34);
+    line-height: 1.176; /* 40/34 */
+    text-transform: uppercase;
+    @media (max-width: toRem(600)) {
+      font-size: toRem(28);
+    }
+    &:not(:last-child) {
+      margin-bottom: toRem(40);
+      @media (max-width: toRem(600)) {
+        margin-bottom: toRem(20);
+      }
+    }
+    @media (min-width: toEm(1470)) {
+      position: absolute;
+      top: 0;
+      left: toRem(-36);
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+    }
+  }
+  // .explore__items
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(toRem(250), 1fr));
+    gap: toRem(24);
+    position: relative;
+    @media (max-width: toEm(600)) {
+      gap: toRem(16);
+    }
+  }
+  // .explore__item
+  &__item {
+  }
+}
+.item-explore {
+  position: relative;
+  @media (min-width: toEm(550)) {
+    &:nth-child(10n + 1),
+    &:nth-child(8n + 1) {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+  }
+  @media (any-hover: hover) {
+    &:hover &__info {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  // .item-explore__image
+  &__image {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  // .item-explore__info
+  &__info {
+    width: 100%;
+    padding: toRem(15);
+    border: 1px solid $secondaryDarkColor;
+    background-color: $secondaryDarkColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: toRem(15);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    color: $secondaryWhiteColor;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.7s;
+  }
+  // .item-explore__label
+  &__label {
+  }
+  // .item-explore__quantity
+  &__quantity {
+  }
+}

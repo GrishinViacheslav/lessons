@@ -1,0 +1,40 @@
+.page {
+  // .page__bestsellers
+  &__bestsellers {
+    @include adaptiveValue("margin-bottom", 120, 20);
+  }
+}
+.bestsellers {
+  // .bestsellers__container
+  &__container {
+    & > *:not(:last-child) {
+      margin-bottom: toRem(35);
+      @media (max-width: toEm(991.98)) {
+        margin-bottom: toRem(20);
+      }
+    }
+  }
+  // .bestsellers__title
+  &__title {
+    @extend %section-title;
+  }
+  // .bestsellers__filter
+  &__filter {
+  }
+  // .bestsellers__items
+  &__items {
+    display: flex;
+    column-gap: toRem(24);
+    overflow: auto;
+    padding-bottom: toRem(20);
+    @media (max-width: toEm(767.98)) {
+      column-gap: toRem(16);
+    }
+    & .card {
+      flex: 0 0 toRem(312);
+      @media (max-width: toEm(767.98)) {
+        flex: 0 0 toRem(220);
+      }
+    }
+  }
+}

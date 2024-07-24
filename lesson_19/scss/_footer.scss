@@ -1,0 +1,200 @@
+.footer {
+  // .footer__body
+  &__body {
+  }
+  // .footer__bottom
+  &__bottom {
+  }
+}
+.body-footer {
+  @include adaptiveValue("padding-top", 140, 25);
+  @include adaptiveValue("padding-bottom", 96, 25);
+  // .body-footer__container
+  &__container {
+    display: flex;
+    column-gap: toRem(56);
+    row-gap: toRem(25);
+    @media (max-width: toEm(1100)) {
+      column-gap: toRem(30);
+    }
+    @media (max-width: toEm(991.98)) {
+      flex-wrap: wrap;
+    }
+  }
+  // .body-footer__content
+  &__content {
+    flex: 0 1 toRem(392);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: toRem(32);
+    @media (max-width: toEm(991.98)) {
+      flex: 0 1 auto;
+    }
+    @media (max-width: toEm(767.98)) {
+      row-gap: toRem(15);
+    }
+    @media (max-width: toEm(479.98)) {
+      align-items: center;
+      text-align: center;
+    }
+  }
+  // .body-footer__logo
+  &__logo {
+  }
+  // .body-footer__text
+  &__text {
+    color: rgba(30, 40, 50, 0.75);
+  }
+  // .body-footer__social
+  &__social {
+  }
+  // .body-footer__menu
+  &__menu {
+  }
+}
+.social {
+  // .social__list
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: toRem(36);
+  }
+  // .social__item
+  &__item {
+  }
+  // .social__link
+  &__link {
+    @extend %button-block;
+  }
+}
+.menu-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  column-gap: toRem(40);
+  row-gap: toRem(15);
+  flex-wrap: wrap;
+  @media (max-width: toEm(479.98)) {
+    flex-direction: column;
+  }
+  // .menu-footer__column
+  &__column {
+    flex: 1 1 toRem(162);
+    & > *:not(:last-child) {
+      margin-bottom: toRem(22);
+      @media (max-width: toEm(600)) {
+        margin-bottom: toRem(12);
+      }
+    }
+    @media (max-width: toEm(600)) {
+      flex: 1 1 auto;
+    }
+    @media (max-width: toEm(479.98)) {
+      padding-top: toRem(15);
+      text-align: center;
+      border-top: 2px solid #e3e3e3;
+    }
+  }
+  // .menu-footer__title
+  &__title {
+    font-weight: 600;
+    @media (max-width: toEm(479.98)) {
+      font-size: toRem(20);
+    }
+  }
+  // .menu-footer__list
+  &__list {
+  }
+  // .menu-footer__item
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: toRem(12);
+    }
+  }
+  // .menu-footer__link
+  &__link {
+    color: $secondaryDarkColor;
+    font-size: toRem(14);
+    line-height: 1.714; /* 24/14 */
+    transition: all 0.4s;
+    @media (max-width: toEm(479.98)) {
+      display: block;
+      font-size: toRem(18);
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        color: $decorColor;
+      }
+      &:active {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+.bottom-footer {
+  padding-block: toRem(10);
+  background-color: $secondaryDarkColor;
+  @media (max-width: toEm(700)) {
+    padding-block: toRem(15);
+  }
+  // .bottom-footer__container
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: toRem(20);
+    row-gap: toRem(15);
+    flex-wrap: wrap;
+    @media (max-width: toEm(700)) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  // .bottom-footer__copy
+  &__copy {
+    color: $secondaryWhiteColor;
+    flex-shrink: 0;
+  }
+  // .bottom-footer__image
+  &__image {
+    flex: 0 1 toRem(283);
+    @media (max-width: toEm(700)) {
+      flex: 0 1 auto;
+    }
+    img {
+      width: 100%;
+      aspect-ratio: 283 / 24;
+      object-fit: contain;
+    }
+  }
+  // .bottom-footer__scroll
+  &__scroll {
+    padding: toRem(5) toRem(15);
+    background-color: transparent;
+    transition: opacity 0.4s;
+    flex-shrink: 0;
+    @media (any-hover: hover) {
+      &:hover {
+        opacity: 0.75;
+        span::after {
+          transform: translateY(toRem(-2));
+        }
+      }
+    }
+    span {
+      color: $secondaryWhiteColor;
+      display: flex;
+      align-items: center;
+      gap: toRem(4);
+      &::after {
+        content: "";
+        width: toRem(16);
+        height: toRem(14);
+        flex-shrink: 0;
+        background: url("../img/icons/arrow-up.svg") 0 0 / contain no-repeat;
+        transition: transform 0.4s;
+      }
+    }
+  }
+}

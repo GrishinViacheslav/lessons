@@ -1,0 +1,480 @@
+//! ======================= logo ===============================
+// .logo
+.logo {
+  // .logo__wrap
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: toRem(10);
+    &::before,
+    &::after {
+      content: "";
+      width: toRem(31);
+      height: toRem(15);
+      flex-shrink: 0;
+      background: url("../img/logo-decor.svg") 0 0 / 100% no-repeat;
+      transition: transform 0.5s;
+    }
+  }
+  // .logo__image
+  &__image {
+    width: toRem(98);
+    flex-shrink: 0;
+    aspect-ratio: 98 / 34;
+    object-fit: contain;
+  }
+  // .logo--header
+  &--header {
+    & .logo__wrap {
+      &::before,
+      &::after {
+        @media (max-width: toEm(550)) {
+          display: none;
+        }
+      }
+    }
+  }
+  // .logo--header
+  &--footer {
+    & .logo__wrap {
+      transition: transform 0.7s, opacity 0.5s;
+      @media (any-hover: hover) {
+        &:hover {
+          transform: translateX(toRem(5));
+          opacity: 0.75;
+        }
+      }
+    }
+  }
+}
+
+//! ======================= main-buttons ===============================
+
+%button-block {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: toRem(8);
+  @media (any-hover: hover) {
+    &:hover span {
+      color: $decorColor;
+    }
+  }
+  & > .icon {
+    width: toRem(25);
+    height: toRem(25);
+    transition: fill 0.4s;
+  }
+  @media (any-hover: hover) {
+    &:hover .icon {
+      fill: $decorColor;
+    }
+  }
+  span {
+    color: #1e2832;
+    transition: color 0.4s;
+  }
+}
+// ===========================================================
+//! section-title
+%section-title {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  @include adaptiveValue("font-size", 50, 28);
+  font-weight: 500;
+  line-height: 1.18; /* 59/50 */
+}
+// ===========================================================
+//!act-block
+.act {
+  max-width: toRem(1350);
+  padding-inline: toRem(15);
+  margin-inline: auto;
+  margin-block: 20px;
+}
+.act-block {
+  display: flex;
+  justify-content: space-between;
+  column-gap: toRem(35);
+  row-gap: toRem(15);
+  @media (max-width: toEm(479.98)) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  // .act-block__list
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: toRem(40);
+    row-gap: toRem(10);
+    flex-wrap: wrap;
+    @media (max-width: toEm(479.98)) {
+      column-gap: toRem(30);
+      justify-content: center;
+    }
+  }
+  // .act-block__item
+  &__item {
+  }
+  // .act-block__link
+  &__link {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+    transition: color 0.4s;
+    &.selected {
+      color: $mainColor;
+    }
+    @media (max-width: toEm(600)) {
+      font-size: toRem(18);
+    }
+    @media (any-hover: hover) {
+      &:hover:not(&.selected) {
+        color: $decorColor;
+      }
+    }
+  }
+  // .act-block__button
+  &__button {
+    align-self: flex-start;
+    flex-shrink: 0;
+    padding: toRem(5) toRem(15);
+    background-color: $secondaryDarkColor;
+    transition: background-color 0.4s;
+    span {
+      color: $secondaryWhiteColor;
+      @media (max-width: toEm(479.98)) {
+        font-size: toRem(18);
+      }
+    }
+    @media (max-width: toEm(479.98)) {
+      width: 100%;
+    }
+    &--filter {
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: toRem(8);
+
+        &::before {
+          content: "";
+          width: toRem(20);
+          height: toRem(20);
+          flex-shrink: 0;
+          background: url("../img/icons/filter-button.svg") 0 0 / contain no-repeat;
+        }
+      }
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #af2d21;
+      }
+    }
+  }
+}
+// ===========================================================
+// !Button link
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  // .button-link--big
+  &--big {
+    gap: toRem(8);
+    padding: toRem(19) toRem(26);
+    @media (max-width: toEm(600)) {
+      padding: toRem(10) toRem(15);
+    }
+    & .icon {
+      width: toRem(30);
+      height: toRem(30);
+    }
+    span {
+      font-family: "Roboto", sans-serif;
+      font-size: toRem(29);
+      line-height: 1.172; /* 34/29 */
+      @media (max-width: toEm(767.98)) {
+        font-size: toRem(20);
+      }
+      @media (max-width: toEm(550)) {
+        font-size: toRem(20);
+      }
+    }
+  }
+  // .button-link--big
+  &--small {
+    gap: toRem(4);
+    padding: toRem(5) toRem(15);
+    & .icon {
+      width: toRem(20);
+      height: toRem(20);
+    }
+    span {
+      /* 34/29 */
+    }
+  }
+  // .button-link--black
+  &--black {
+    background-color: $secondaryDarkColor;
+    transition: background-color 0.4s;
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: $decorColor;
+      }
+    }
+    & .icon {
+      fill: $secondaryWhiteColor;
+    }
+    span {
+      color: $secondaryWhiteColor;
+    }
+  }
+  &--white {
+    background-color: $secondaryWhiteColor;
+    @media (any-hover: hover) {
+      &:hover .icon {
+        fill: $decorColor;
+      }
+      &:hover span {
+        color: $decorColor;
+      }
+    }
+    & .icon {
+      fill: $secondaryDarkColor;
+      transition: fill 0.4s;
+    }
+    span {
+      color: $secondaryDarkColor;
+      transition: color 0.4s;
+    }
+  }
+}
+
+// =========================================================================================================
+
+// !NEW CARD!!!!!
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: toRem(16);
+  @media (max-width: toEm(493)) {
+    row-gap: toRem(10);
+  }
+  @media (any-hover: hover) {
+    &:hover &__image img {
+      transform: scale(1.07);
+    }
+    &:hover .actions-card {
+      pointer-events: all;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  // .card__block
+  &__block {
+    position: relative;
+  }
+  // .card__image
+  &__image {
+    display: block;
+    overflow: hidden;
+    background-color: #ececec;
+    img {
+      width: 100%;
+      aspect-ratio: 312 / 400;
+      object-fit: contain;
+      transition: transform 0.4s;
+    }
+  }
+  // .card__proposal
+  &__proposal {
+    position: absolute;
+    top: toRem(20);
+    left: 0;
+  }
+  // .card__actions
+  &__actions {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  // .card__title
+  &__title {
+    flex-grow: 1;
+    padding-inline: toRem(10);
+    font-weight: 600;
+    transition: color 0.4s;
+    @media (any-hover: hover) {
+      &:hover {
+        color: $decorColor;
+      }
+    }
+  }
+  // .card__info
+  &__info {
+  }
+}
+.proposal-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: toRem(10);
+  // .proposal-card__item
+  &__item {
+    padding: toRem(4) toRem(12);
+    font-size: toRem(12);
+    font-weight: 600;
+    line-height: 1.333; /* 16/12 */
+    text-transform: uppercase;
+    color: $secondaryWhiteColor;
+  }
+}
+.item-proposal {
+  // .item-proposal--sale
+  &--sale {
+    background-color: $mainColor;
+  }
+  // .item-proposal--hot
+  &--hot {
+    background-color: $decorColor;
+  }
+}
+.actions-card {
+  width: 100%;
+  padding: toRem(15);
+  background-color: $secondaryDarkColor;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: toRem(10);
+  flex-wrap: wrap;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.7s;
+  // .actions-card__block
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: toRem(21);
+    flex-wrap: wrap;
+  }
+  // .actions-card__button
+  &__button {
+    @extend %button-block;
+    & .icon {
+      fill: $secondaryWhiteColor;
+    }
+    & span {
+      color: $secondaryWhiteColor;
+    }
+  }
+}
+
+.info-card {
+  padding-inline: toRem(10);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: toRem(15);
+  // .info-card__category
+  &__category {
+    color: rgba(0, 0, 0, 0.5);
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  // .info-card__prices
+  &__prices {
+  }
+}
+.prices {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: toRem(12);
+  row-gap: toRem(5);
+  & &__item--current:only-child {
+    color: $mainColor;
+  }
+  // .prices__item
+  &__item {
+    // .prices__item--old
+    &--old {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: toRem(14);
+      font-weight: 600;
+      line-height: 1.357; /* 19/14 */
+      text-decoration-line: line-through;
+    }
+    // .prices__item--current
+    &--current {
+      color: $decorColor;
+      font-weight: 600;
+    }
+  }
+}
+// ==========================================================================================================
+
+// !form-block
+%form-block {
+  display: flex;
+  align-items: flex-end;
+  gap: toRem(26);
+  flex-wrap: wrap;
+  @media (max-width: toEm(430)) {
+    gap: toRem(18);
+  }
+  // .form__input
+  & > .form__input {
+    flex: 1 1 toRem(215);
+    padding: toRem(11) toRem(13);
+    border-bottom: toRem(2) solid $secondaryDarkColor;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s;
+    &[type="search"]::-webkit-search-cancel-button,
+    &[type="search"]::-webkit-search-decoration {
+      display: none;
+    }
+    &::placeholder {
+      transition: color 0.4s;
+    }
+    @media (any-hover: hover) {
+      &:hover::placeholder {
+        color: $decorColor;
+      }
+    }
+    &:focus {
+      border-bottom: toRem(2) solid $decorColor;
+    }
+    &:focus::placeholder {
+      opacity: 0;
+    }
+  }
+
+  // form__button
+  & > .form__button {
+    @extend %button-block;
+    gap: toRem(4);
+    padding: toRem(8) toRem(16);
+    border-bottom: toRem(2) solid $secondaryDarkColor;
+    outline: none;
+    transition: border-bottom 0.4s;
+    @media (any-hover: hover) {
+      &:hover {
+        border-bottom: toRem(2) solid $decorColor;
+      }
+    }
+    span {
+      text-transform: uppercase;
+      @media (max-width: toEm(430)) {
+        display: none;
+      }
+    }
+  }
+}

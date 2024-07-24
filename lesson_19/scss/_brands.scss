@@ -1,0 +1,31 @@
+.page {
+  // .page__brands
+  &__brands {
+    @include adaptiveValue("margin-bottom", 90, 40);
+  }
+}
+.brands {
+  // .brands__container
+  &__container {
+  }
+  // .brands__items
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: toRem(25);
+    row-gap: toRem(20);
+    flex-wrap: wrap;
+    @media (max-width: toEm(991.98)) {
+      justify-content: center;
+    }
+  }
+  .brands__item &__item {
+    flex: 0 1 toRem(200);
+    img {
+      width: 100%;
+      aspect-ratio: 200 / 70;
+      object-fit: cover;
+    }
+  }
+}

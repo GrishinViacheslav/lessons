@@ -1,0 +1,123 @@
+.page {
+  // .page__subscribe
+  &__subscribe {
+    @include adaptiveValue("margin-bottom", 140, 40);
+  }
+}
+.subscribe {
+  // .subscribe__container
+  &__container {
+    & > *:not(:last-child) {
+      margin-bottom: toRem(35);
+      @media (max-width: toEm(991.98)) {
+        margin-bottom: toRem(20);
+      }
+    }
+  }
+  // .subscribe__title
+  &__title {
+    @extend %section-title;
+  }
+  // .subscribe__filter
+  &__filter {
+  }
+  // .subscribe__items
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(toRem(250), 1fr));
+    gap: toRem(24);
+    @media (max-width: toEm(767.98)) {
+      grid-template-columns: repeat(auto-fit, minmax(toRem(220), 1fr));
+    }
+  }
+}
+.act-block {
+  // .act-block__list
+  &__list {
+  }
+  // .act-block__item
+  &__item {
+  }
+  // .act-block__link
+  &__link {
+  }
+  // .act-block__button
+  &__button {
+    // .act-block__button--filter
+    &--filter {
+    }
+  }
+}
+.selected {
+}
+.product {
+}
+.product-card {
+  // .product-card__block
+  &__block {
+  }
+  // .product-card__image
+  &__image {
+  }
+  // .product-card__proposal
+  &__proposal {
+  }
+  // .product-card__actions
+  &__actions {
+  }
+  // .product-card__title
+  &__title {
+  }
+  // .product-card__info
+  &__info {
+  }
+}
+.proposal-product-card {
+  // .proposal-product-card__item
+  &__item {
+    // .proposal-product-card__item--sale
+    &--sale {
+    }
+    // .proposal-product-card__item--hot
+    &--hot {
+    }
+  }
+}
+.actions-card {
+  // .actions-card__details
+  &__details {
+  }
+  // .actions-card__buttons
+  &__buttons {
+  }
+  // .actions-card__button
+  &__button {
+    // .actions-card__button--favorite
+    &--favorite {
+    }
+    // .actions-card__button--cart
+    &--cart {
+    }
+  }
+}
+.icon {
+}
+.info-product {
+  // .info-product__category
+  &__category {
+  }
+  // .info-product__prices
+  &__prices {
+  }
+}
+.prices-product {
+  // .prices-product__item
+  &__item {
+    // .prices-product__item--old
+    &--old {
+    }
+    // .prices-product__item--current
+    &--current {
+    }
+  }
+}
