@@ -1,20 +1,15 @@
 @use "sass:math";
-
+// ==========================================================
 // Кольори
 @import "_colors.scss";
-
-/* Локальне підключення шрифтів */
+// Локальне підключення шрифтів
 @import "_icons.scss";
 @import "_fonts.scss";
-
-/* Скидання стилів */
+// Скидання стилів
 @import "_reset.scss";
-
-/* Mixins*/
+// Міксіни
 @import "_mixins.scss";
 
-// Компоненти
-// @import "_common.scss";
 // Налаштування адаптивної сітки ===============================================================================================================================================================================================================================================================================================
 
 // Мінімальна ширина сторінки
@@ -30,38 +25,34 @@ $containerPadding: 30;
 $containerWidth: $maxWidthContainer + $containerPadding;
 
 // ==========================================================
-
-// ==========================================================
 html {
-  scroll-behavior: smooth;
 }
 body {
-  font-family: "Proxima Nova", sans-serif;
-  color: $mainColor;
-  background-color: $lightColor;
+	font-family: "ProximaNova", sans-serif;
+	color: $mainColor;
+	background-color: $lightColor;
 }
-
 .wrapper {
-  min-height: 100%;
-  overflow: clip;
+	min-height: 100%;
+	overflow: clip;
 
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 .wrapper > main {
-  flex-grow: 1;
+	flex-grow: 1;
 }
-
+/* ------------------------- */
 [class*="__container"] {
-  max-width: toRem($containerWidth);
-  padding-inline: toRem(15);
-  margin-inline: auto;
+	max-width: toRem($containerWidth);
+	padding-inline: toRem(15);
+	margin: 0 auto;
 }
-/*=========== components ============*/
-
-// !sections
+/* ------------------------ */
 // Компоненти
 @import "_common.scss";
+// Окремі сторінки
+// @import "_home.scss";
+// Окремі компоненти
 @import "_header.scss";
-@import "_hero.scss";
 @import "_footer.scss";
